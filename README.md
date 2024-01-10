@@ -1,8 +1,22 @@
-# React + Vite
+# React + Vite: Steps with validation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This PoC allows you to go through steps. Each steps is associated with a Page.
+- You can go to the next or previous step with the buttons.
+- There is a validation so that the user cannot skip steps by changing the URL.
+- The order of the steps is defined in a constant.
+- The currentStep is handled in the Context API with Local Storage.
+- With UseEffect it's validates that the route matches the currentStep.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React Router Dom v6
+- Local Storage
+- Context API
+
+## Getting Started
+
+```bash
+npm install
+
+npm run dev
+```
